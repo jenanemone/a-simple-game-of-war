@@ -1,0 +1,127 @@
+/******************************************
+/* CSS HERE BE DRAGONS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Trochut', 'Times New Roman', Times, serif;
+}
+img{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+button {
+  background:rgb(162, 201, 199);
+  border-radius: .5rem;
+  padding: 2.4rem;
+  height: 3rem;
+  font-size: 2rem;
+  line-height: .2;
+}
+.newGame {
+  background: rgb(195, 158, 197);
+}
+iframe {
+  width: 300px;
+}
+.gameBoard {
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+}
+header {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.playa1, .playa2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  padding: 2%;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.playa1 {
+  background: rgb(195, 158, 197);
+}
+.playa2 {
+  background:rgb(162, 201, 199);
+}
+.spacer {
+  height: 20px;
+  width: 20px;
+}
+.spacey {
+  height: 300px;
+  border-left:rgb(162, 201, 199) 2px solid;
+  border-right:rgb(195, 158, 197) 2px solid;
+  width: 20px;
+  margin: 8%;
+}
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scoreCard {
+  font-size: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 540px;
+  border-top: rgb(162, 201, 199) 2px solid;
+  border-left:rgb(162, 201, 199) 2px solid;
+  border-right:rgb(195, 158, 197) 2px solid;
+  border-bottom: rgb(195, 158, 197) 2px solid;
+}
+table {
+  width: 100%;
+  font-size: 1.8rem;
+}
+table td {
+  border: 1px solid black;
+  text-align: center;
+  font-family: 'Diplomata', 'Times New Roman', Times, serif;
+}
+.playr1 {
+  background:rgb(195, 158, 197);
+}
+.playr2 {
+  background:rgb(162, 201, 199);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media all and (min-width: 1024px) {
+  .gameBoard {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 504px) {
+  button {
+    padding: 0;
+  }
+}
